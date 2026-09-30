@@ -57,7 +57,7 @@ The baseline has four GPT blocks, width 128, four attention heads and **1,088,25
 **My model** — :
 
 ```bash
-python train.py --implementation student --seed 17 --eval-every 300 --steps 5000 --threads 8 --run-dir runs/swiglu-max
+python train.py --implementation student --seed 17 --eval-every 300 --steps 3600 --threads 8 --run-dir runs/swiglu-max
 python evaluate.py --checkpoint runs/swiglu-max/checkpoint.pt --split validation
 # Freeze the final method before testing:
 python evaluate.py --checkpoint runs/swiglu-max/checkpoint.pt --split test
